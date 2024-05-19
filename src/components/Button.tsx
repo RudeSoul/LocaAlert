@@ -10,7 +10,7 @@ interface IButton {
 
 export default function Button(props: IButton) {
 	const { text, onPress } = props;
-	let style = 'bg-green-500';
+	let style = 'bg-red-500';
 	if (props.style) style = props.style;
 	let textStyle = 'text-white justify-center self-center';
 	if (props.textStyle) textStyle = props.textStyle;
@@ -24,3 +24,4 @@ export default function Button(props: IButton) {
 		</Pressable>
 	);
 }
+

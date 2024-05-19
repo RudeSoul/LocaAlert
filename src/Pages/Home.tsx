@@ -4,6 +4,7 @@ import { Text, View, TextInput } from 'react-native';
 import Button from '../components/Button';
 import Filter from '../components/Filter';
 import ThemeSelector from '../components/ThemeSelector';
+import MyStatusBar from '../components/MyStatusBar';
 
 type TodoType = {
 	id: number;
@@ -27,7 +28,7 @@ const TodoTask = (props: ITodo) => {
 
 	return (
 		<View
-			className={`flex flex-row justify-between m-1 border border-green-500 ${style}`}
+			className={`flex flex-row justify-between m-1 border border-blue-500 ${style}`}
 		>
 			<Text
 				className="self-center p-2 bg-yellow-50"
@@ -78,7 +79,7 @@ export default function HomePage() {
 		<View className="h-full bg-yellow-100 dark:bg-slate-800">
 			<Text className="text-black font-bold self-center mt-8">Todo App</Text>
 			<TextInput
-				className="p-1 m-2 border border-green-500"
+				className="p-1 m-2 border border-blue-500"
 				onChangeText={handleTask}
 				value={task}
 				placeholder="Insert a Task"
@@ -88,6 +89,7 @@ export default function HomePage() {
 				onPress={addTask}
 				text="Add Task"
 			/>
+
 			{tasks.map((task, index) => (
 				<TodoTask
 					key={index}
@@ -96,12 +98,13 @@ export default function HomePage() {
 					onLongPress={deleteTask}
 				/>
 			))}
-			{/* <StatusBar
-				// style="auto"
+			<MyStatusBar
+				style="auto"
 				translucent={true}
-			/> */}
+			/>
 			<Filter />
 			<ThemeSelector />
 		</View>
 	);
 }
+
