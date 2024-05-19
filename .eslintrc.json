@@ -27,5 +27,10 @@
 				"endOfLine": "auto"
 			}
 		]
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
 	}
 }
