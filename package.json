@@ -20,6 +20,7 @@
 	"dependencies": {
 		"expo": "^51.0.8",
 		"expo-status-bar": "^1.12.1",
+		"lightningcss-darwin-arm64": "^1.25.0",
 		"nativewind": "^2.0.11",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
@@ -28,6 +29,7 @@
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.9",
+		"@expo/metro-runtime": "~3.2.1",
 		"@types/react": "~18.2.79",
 		"@types/react-native": "^0.69.1",
 		"@typescript-eslint/eslint-plugin": "^5.36.0",
@@ -43,8 +45,7 @@
 		"postcss-loader": "^8.1.1",
 		"prettier": "^3.2.5",
 		"tailwindcss": "3.3.2",
-		"typescript": "~5.3.3",
-		"@expo/metro-runtime": "~3.2.1"
+		"typescript": "~5.3.3"
 	},
 	"private": true
 }
