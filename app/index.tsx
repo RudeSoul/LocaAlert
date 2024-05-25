@@ -4,28 +4,14 @@ import { View, Text, Pressable } from 'react-native';
 export default function Page() {
 	return (
 		<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-			<Text style={{ fontSize: 20 }}>Welcome to LocaAlert</Text>
+			<Text className="text-xl">Welcome to LocaAlert</Text>
 
 			<Link
 				href="(tabs)/alarms"
 				asChild
 			>
 				<Pressable>
-					<Text
-						style={{
-							fontSize: 20,
-							paddingTop: 14,
-							paddingBottom: 14,
-							paddingRight: 18,
-							paddingLeft: 18,
-							marginTop: 20,
-							backgroundColor: '#ddd',
-							color: 'green',
-							borderRadius: 8,
-							borderColor: 'green',
-							borderWidth: 0.8
-						}}
-					>
+					<Text className="mt-5 py-3 px-5 text-xl bg-gray-200 rounded-lg border border-green-700 text-green-700">
 						Get Started
 					</Text>
 				</Pressable>
