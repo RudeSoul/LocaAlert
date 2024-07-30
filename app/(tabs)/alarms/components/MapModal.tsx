@@ -56,7 +56,7 @@ const MapModal: React.FC<MapModalProps> = ({
 					placeholder="Search"
 					onPress={handlePlaceSelect}
 					query={{
-						key: 'AIzaSyA8I4OVHJB5KydlTu0IRMNwN0QZIC7w-2A',
+						key: 'key',
 						language: 'en'
 					}}
 					styles={{
