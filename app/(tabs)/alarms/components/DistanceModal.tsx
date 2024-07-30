@@ -160,4 +160,3 @@ const DistanceModal: React.FC<DistanceModalProps> = ({
 };
 
 export default DistanceModal;
-

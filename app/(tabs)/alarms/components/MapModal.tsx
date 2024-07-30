@@ -93,4 +93,3 @@ const MapModal: React.FC<MapModalProps> = ({
 };
 
 export default MapModal;
-

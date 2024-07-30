@@ -53,4 +53,3 @@ const AlarmItem: React.FC<AlarmItemProps> = ({
 };
 
 export default AlarmItem;
-

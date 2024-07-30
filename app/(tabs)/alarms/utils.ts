@@ -14,4 +14,3 @@ export interface LocationCoords {
 }
 
 export type AlarmDays = boolean[];
-

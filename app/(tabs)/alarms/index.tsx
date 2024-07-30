@@ -31,14 +31,14 @@ export default function App() {
 		loadAlarms();
 
 		(async () => {
-			let { status } = await Location.requestForegroundPermissionsAsync();
+			const { status } = await Location.requestForegroundPermissionsAsync();
 			console.log('Location permission status:', status);
 			if (status !== 'granted') {
 				setErrorMsg('Permission to access location was denied');
 				return;
 			}
 
-			let { status: notificationStatus } =
+			const { status: notificationStatus } =
 				await Notifications.requestPermissionsAsync();
 			console.log('Notification permission status:', notificationStatus);
 			if (notificationStatus !== 'granted') {
@@ -46,7 +46,7 @@ export default function App() {
 				return;
 			}
 
-			let loc = await Location.getCurrentPositionAsync({});
+			const loc = await Location.getCurrentPositionAsync({});
 			console.log('Current location:', loc);
 			setLocation(loc.coords);
 

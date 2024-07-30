@@ -30,4 +30,3 @@ const AlarmList: React.FC<AlarmListProps> = ({
 };
 
 export default AlarmList;
-
